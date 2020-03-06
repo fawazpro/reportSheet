@@ -20,6 +20,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$pass = md5('admin');
+		$data = [
+			'admin' => $pass
+		];
+		$this->load->view('welcome_message', $data);
 	}
 }
