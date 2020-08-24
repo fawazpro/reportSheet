@@ -12,10 +12,16 @@ class Pages extends CI_Controller
         $this->load->view('login');
     }
 
+    public function test()
+    {
+        
+        $this->load->view('test');
+    }
+
     public function dashboard()
     {
         $uname = $this->input->post('uname');
-        $pass = $this->input->post('pword');
+        $pass = md5($this->input->post('pword'));
         if($this->users->check($uname, $pass)){
             $this->load->view('dashboard');
         }else{

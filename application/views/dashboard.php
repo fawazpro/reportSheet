@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
+    <style>
+        nav{
+            display: flex;
+            flex-direction: column;
+        }
+        nav a{
+            align-content: space-between;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Dashboard</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellendus nobis officiis vero provident laborum autem molestiae perspiciatis adipisci, nisi animi pariatur consequatur commodi cumque. Sint eius quae porro, earum a aspernatur ad itaque laborum recusandae est? Libero illo, numquam ullam odit magnam fugit voluptatibus vel odio repellendus blanditiis nisi.</p>
+    <nav>
+    <a href="<?= base_url('admin/add_student') ?>">Add Student</a>
+    <a href="<?= base_url('admin/add_class') ?>">Add Class</a>
+    <a href="<?= base_url('admin/scores') ?>">Update Scores</a>
+    <a href="<?= base_url('admin/reportS') ?>">Report Sheet</a>
+    </nav>
 
 </body>
 

@@ -15,7 +15,6 @@
         <input type="password" name="pword" id="">
         <input type="submit" value="login">
     </form>
-
 </body>
 
 </html>

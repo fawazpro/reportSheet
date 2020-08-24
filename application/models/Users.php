@@ -12,4 +12,10 @@ class Users extends CI_Model
             return FALSE;
         }
     }
+
+    public function level($uname)
+    {
+        $query = $this->db->get_where('users', array('uname' => $uname));
+        return $query->row_array();
+    }
 }
