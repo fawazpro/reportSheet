@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 850px;
+    max-height: 3508px;
+}
+
+span{
+    text-decoration-style: wavy;
+}
+.container{
+    margin:0 auto;
+    padding: 2px 10px;
+
+}
+
+header{
+    margin: 5px auto;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo{
+    width: 128px;
+
+}
+
+header .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basic-info{
+    margin: 20px auto;
+    padding: 1px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.basic-info p{
+    text-align: justify;
+}
+
+.gen-info{
+    padding: 2px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+}
+
+.attendance-info{
+    border: 2px #000 solid;
+    line-height: 1.7rem;
+}
+.attendance-info h5{
+    text-align: center;
+}
+
+.class-info{
+    border: 2px #000 solid;
+    line-height: 1.2rem;
+}
+
+.mid{
+    /* padding: 2px 29px; */
+    display: flex;
+    flex-direction: row;
+    /* border: 2px #000 solid; */
+}
+
+.report{
+    padding: 2px 29px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.report h3{
+    text-align: center;
+}
+
+.report table{
+    border: #000 1px solid;
+    line-height: 1.5rem;;
+}
+
+.table td:nth-child(even){
+    /* border: #000 1px solid; */
+    text-align: center;
+}
+.table td:nth-child(3){
+    /* border: #000 1px solid; */
+    text-align: center;
+}
+.table td:nth-child(5){
+    /* border: #000 1px solid; */
+    text-align: center;
+}
+.graph{
+    display: flex;
+    flex-direction: column;
+}
+.pie{
+    text-align: center;
+    margin-bottom: 10px;
+    border: #000 1px solid;
+    width: 250px;
+    height: 250px;
+}
+.bar{
+    text-align: center;
+    margin-top: 10px;
+    border: #000 1px solid;
+    width: 250px;
+    height: 250px;
+}
+
+.comment{
+    padding: 5px 20px;
+    text-align: justify;
+}
+
+.signature{
+    display: flex;
+    justify-content: space-around;
+}
+
+.signature >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature >div >img{
+    border-bottom: #000 5px solid;
+}
+
+.signature img{
+    width: 90px;
+}

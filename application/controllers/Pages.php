@@ -12,6 +12,12 @@ class Pages extends CI_Controller
         $this->load->view('login');
     }
 
+    public function test()
+    {
+        
+        $this->load->view('test');
+    }
+
     public function dashboard()
     {
         $uname = $this->input->post('uname');

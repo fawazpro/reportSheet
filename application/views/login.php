@@ -15,6 +15,7 @@
         <input type="password" name="pword" id="">
         <input type="submit" value="login">
     </form>
+    <a href="<?= base_url('test') ?>"></a>
 
 </body>
 
